@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDWIKI</title>
+    <style>
+        body {
+            background-color: #f9f9f9; /* Ашық фон түсі */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* Контейнердің ені */
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Контейнерге көлеңке */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #1877f2; /* Фейсбуктың көк түсі */
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-family: 'Smooth Curve', sans-serif; /* Логотипке арналған қаріп */
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Логотиптің көлеңкесі */
+        }
+
+        .form-content {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff; /* Контейнердің ақ түсі */
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Контейнердің көлеңкесі */
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            padding: 10px;
+            background-color: #1877f2; /* Батырманың көк түсі */
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            margin: 30px auto; /* Контейнерден алшақтай жерге орналастыру */
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Батырмаға көлеңке */
+        }
+
+        .button:hover {
+            background-color: #0b5ed7;
+            transform: scale(1.05); /* Батырманы басқанда анимация */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            LANDWIKI
+        </div>
+        <div class="form-content">
+            <div class="form-group">
+                <label for="name">Аты-жөні:</label>
+                <input type="text" id="name" name="name" placeholder="Аты-жөніңізді енгізіңіз" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Жасы:</label>
+                <input type="number" id="age" name="age" placeholder="Жасыңызды енгізіңіз" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Электронды пошта:</label>
+                <input type="email" id="email" name="email" placeholder="Электронды поштаңызды енгізіңіз" required>
+            </div>
+            <a href="https://baton7116.github.io/LANDWIKI/" class="button">Тіркелу</a> <!-- Батырманы басқанда басқа сайтқа ауысады -->
+        </div>
+    </div>
+</body>
+</html>
